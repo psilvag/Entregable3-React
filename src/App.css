@@ -1,0 +1,222 @@
+html{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    box-sizing: inherit;
+ 
+}
+.App{
+    display: flex;
+    flex-direction: column;
+   }
+.image_header img{
+    width: 100%;
+    height: 640px;
+    z-index: -1;
+}
+/*STYLE APP*/
+ .app_container{
+    background-color: rgb(31, 32, 32); 
+    margin: 0;
+    position:absolute;
+    top:565px;
+    z-index: 3;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    
+ }
+ .title{
+   color: white;
+   font-size:30px;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+ }
+
+ /*COMPONENT FORM*/
+ .form{
+    width: 700px;
+    height: 30px;
+
+ }
+ .app_input{
+    width: 700px;
+    height: 41px;
+    margin-top: 5px;
+    border-radius: 9px 0 0 9px;
+    border-style: none;
+    background-color: rgb(255, 253, 251);
+
+ }
+ .app_button_search
+ {
+    width: 100px;
+    height: 47px;
+    border-radius: 0 6px 6px 0;
+    background-color: rgb(235, 142, 20);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+ }
+
+ /*COMPONENT LOCATION*/
+
+ .location_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+ }
+ .location_title{
+    color:antiquewhite;
+    font-size: 30px;
+    align-self: center;
+ }
+ .info_list{
+   display: flex;
+   color: antiquewhite;
+   font-size: 20px;
+   align-items: center;
+   list-style: none;
+   gap:90px;
+ }
+ .info_list span{
+  color: rgb(212, 140, 47);
+ }
+ 
+ /*COMPONENT FILTER LIST*/
+
+.suggestions_List li{
+background-color: antiquewhite;
+list-style: none;
+color: black;
+font-size: 18px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: bolder;
+cursor: pointer;
+height: 30px;
+width: 705px;
+position: relative;
+left: -40px;
+
+
+}
+
+.suggestions_List li:hover{
+    background-color:  rgb(235, 142, 20);
+}
+
+
+
+/*COMPONENT CARD RESIDENT*/
+.cards_residents{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap:10px;
+   width: 1400px;
+
+}
+.card-resident-info{
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   height: 500px;
+   background-color: antiquewhite;
+   align-items: center;
+   position: relative;
+   border-radius: 10px;
+}
+.card-header img{
+   width: 300px;
+   height: 300px;
+}
+.status-info span{
+  color:   antiquewhite;
+  font-size: 15px;
+  font-weight: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+.status-info{
+position: absolute;
+top:30px;
+left: 0;
+background-color:   rgb(25, 31, 31); 
+width: 120px;
+height: 30px;
+border-radius: 0 10px 10px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px;
+
+}
+.circle{
+   border-radius: 50%;
+   background-color: rgb(176, 241, 114);
+   aspect-ratio: 1;
+   width: 15px;
+   height: 15px;
+}
+.circle-unk{
+   border-radius: 50%;
+   background-color: rgb(213, 175, 125);
+   aspect-ratio: 1;
+   width: 15px;
+   height: 15px;
+}
+.circle-dead{
+   border-radius: 50%;
+   background-color: rgb(196, 61, 51);
+   aspect-ratio: 1;
+   width: 15px;
+   height: 15px;
+}
+
+
+
+.card-info{
+   display: flex;
+   flex-direction: column;
+  
+  
+}
+.card-info h3{
+   color:  rgb(89, 52, 4); 
+   font-size: 22px;
+   position: absolute;
+   left: 15px;
+   bottom: 135px;
+}
+.card-list-info{
+   width: 200px;
+   list-style: none;
+   position: relative;
+   left: -54px;
+   bottom: -48px;
+   color: rgb(15, 15, 16);
+   font-size: 15px;
+   line-height: 18px;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+  
+}
+.card-list-info span{
+   color: rgb(89, 52, 4) ;
+   font-size: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   
+}
+/*COMPONENT ERROR*/
+.error-messague{
+   color: antiquewhite;
+   font-size: 27px;
+
+}
