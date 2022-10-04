@@ -14,6 +14,7 @@ return (
                 <li><span>Type:</span> {location?.type}</li>
                 <li><span>Dimension:</span>  {location?.dimension}</li>
                 <li><span>Nº Residents:</span> {location?.residents.length}</li>
+                <li><span>ID:</span>&nbsp;{location?.id}</li>
             </ul>
             </div>
            

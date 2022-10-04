@@ -28,8 +28,8 @@ useEffect(()=>{
         </div>
         <section className='card-info'>
             
-                <h3>{resident?.name}</h3>
-                <ul className='card-list-info'>
+                <h3>{resident?.name}</h3> 
+                 <ul className='card-list-info'>
                     <li><span>Specie:&nbsp;</span>{resident?.species}</li>
                     <li><span>Origin:&nbsp;</span>{resident?.origin.name}</li>
                     <li><span>Episodes where appeared:&nbsp;</span>{resident?.episode.length}</li>

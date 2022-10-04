@@ -40,6 +40,7 @@ useEffect(()=>{
 const handleSubmit=(e)=>{
     e.preventDefault()
     setInput(e.target.locationid.value)
+    
     return setSuggestionList()
 }
 
