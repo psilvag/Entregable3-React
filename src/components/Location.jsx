@@ -1,26 +1,23 @@
 import React from 'react'
+import "../stylesComponents/Location.css"
+const Location = ({ location }) => {
 
-const Location = ({location}) => {
-  
-  
-return (
-    <div>
+
+    return (
+
         <article className='location_info'>
             <div className='location_title'>
-                 <span>Location name: {location?.name}</span>
+                <p><span>Location name: </span>{location?.name}</p>
             </div>
-            <div >
-            <ul className='info_list'>
+            <ul className='location_info_list'>
                 <li><span>Type:</span> {location?.type}</li>
                 <li><span>Dimension:</span>  {location?.dimension}</li>
                 <li><span>Nº Residents:</span> {location?.residents.length}</li>
                 <li><span>ID:</span>&nbsp;{location?.id}</li>
             </ul>
-            </div>
-           
         </article>
-    </div>  
-  )
+
+    )
 }
 
 export default Location
