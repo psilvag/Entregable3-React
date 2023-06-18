@@ -6,7 +6,8 @@ import Location from './components/Location'
 import CardResident from './components/CardResident'
 import FilterList from './components/FilterList'
 import Errors from './components/Errors'
-import Rickandmorty from './images/RickMorty.jpg'
+import { FaSearch } from 'react-icons/fa'
+
 
 function App() {
   const [location, setLocation] = useState()
@@ -64,9 +65,8 @@ function App() {
 
           <h1>Rick and Morty</h1>
 
-
-          <div className='app_form'>
-            <form onSubmit={handleSubmit}>
+          <form className='app_form' onSubmit={handleSubmit}>
+            <div className='input_button'>
               <input
                 className='app_input'
                 id='locationid'
@@ -74,25 +74,28 @@ function App() {
                 placeholder='Search by name location or ID  0-126 '
                 onChange={handleChange}
               />
-              <button className='app_button_search'>Search</button>
+              <button className='app_button_search'><FaSearch /></button>
+            </div>
 
+            {suggestionList ?
               <FilterList
                 suggestionList={suggestionList}
                 setInput={setInput}
                 setSuggestionList={setSuggestionList}
-              />
-            </form>
-          </div>
+              /> : <i></i>
+            }
+          </form>
+
 
         </div>
 
         {
           haserror ? <Errors /> :
             <>
-              <div className='location'>
-                <Location
-                  location={location} />
-              </div>
+
+              <Location
+                location={location} />
+
 
               <div className='cards_residents'>
                 {

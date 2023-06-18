@@ -1,12 +1,8 @@
 .error-messague {
-  width: 100%;
+  width: 90%;
   font-size: 30px;
   color: #d0e09b;
   font-weight: 600;
   text-align: center;
-}
-@media (max-width:540px){
-    .error-messague{
-    font-size: 20px;
-    }
+
 }

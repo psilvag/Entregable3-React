@@ -1,44 +1,28 @@
-.suggestions_List li {
-    position: relative;
-    right: 35px;
+.suggestions_List {
+    width: 82%;
+    height: auto;
     background-color: #020d13;
     list-style: none;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
     cursor: pointer;
-    height: auto;
-    width: 700px;
-    padding: 15px;
+    padding: 5px 10px;
     opacity: 60%;
     border-radius: 10px;
+
+
+}
+
+.suggestions_List li {
+    width: 90%;
+    border-radius: 10px;
+    margin: 3px 0;
+
 }
 
 .suggestions_List li:hover {
     cursor: pointer;
     color: #012608;
     background-color: #CEF059;
-}
-
-@media (max-width:992px) {
-    .suggestions_List li {
-        width: 600px;
-
-    }
-
-}
-
-@media (max-width:768px) {
-    .suggestions_List li {
-        width: 500px;
-
-    }
-
-}
-
-@media (max-width:615px) {
-    .suggestions_List li {
-        width: 340px;
-
-    }
 }
