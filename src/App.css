@@ -84,22 +84,23 @@ body {
 }
 
 
-@media (max-width:992px) {
+/*=============RRESPONSIVE===================*/
+
+@media (max-width:615px) {
    .app_form .app_input {
-      width: 600px;
+      width: 350px;
       height: 50px;
 
    }
 
    .app_form .app_button_search {
-      width: 80px;
+      width: 70px;
       height: 55px;
-
+      font-size: 15px;
 
 
    }
 }
-
 @media (max-width:768px) {
    .app_form .app_input {
       width: 500px;
@@ -115,18 +116,17 @@ body {
 
    }
 }
-
-@media (max-width:615px) {
+@media (max-width:992px) {
    .app_form .app_input {
-      width: 350px;
+      width: 600px;
       height: 50px;
 
    }
 
    .app_form .app_button_search {
-      width: 70px;
+      width: 80px;
       height: 55px;
-      font-size: 15px;
+
 
 
    }
